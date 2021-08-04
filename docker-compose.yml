@@ -11,7 +11,7 @@ services:
   # Понятное название сервиса помогает определить его роль.
 
   shop-php:
-    container_name: shop-php
+    container_name: container-shop-php
     # Ключевое слово "build" позволяет задать
     # путь к файлу Dockerfile, который нужно использовать для создания образа,
     # который позволит запустить сервис.
@@ -23,7 +23,7 @@ services:
       - ./docker/dev/php/php.ini:/usr/local/etc/php/php.ini
 
   shop-php-fpm:
-    container_name: shop-php-fpm
+    container_name: container-shop-php-fpm
     build:
       context: ./docker/dev/php-fpm
 
@@ -33,7 +33,7 @@ services:
 
 
   shop-nginx:
-    container_name: shop-nginx
+    container_name: container-shop-nginx
     build:
       context: ./docker/dev/nginx
     volumes:
@@ -57,7 +57,7 @@ services:
       - "443:443"
   #
   shop-node:
-    container_name: shop-node
+    container_name: container-shop-node
     image: node:latest
     volumes:
       - ./:/var/www

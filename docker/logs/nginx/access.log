@@ -1,1 +1,4 @@
- 
+172.18.0.1 - - [03/Aug/2021:22:31:45 +0000] "GET / HTTP/1.1" 200 24541 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:90.0) Gecko/20100101 Firefox/90.0"
+172.18.0.1 - - [03/Aug/2021:22:31:45 +0000] "GET /favicon.ico HTTP/1.1" 404 24522 "http://127.0.0.1/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:90.0) Gecko/20100101 Firefox/90.0"
+172.21.0.1 - - [04/Aug/2021:19:15:17 +0000] "GET / HTTP/1.1" 200 24525 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:90.0) Gecko/20100101 Firefox/90.0"
+172.22.0.1 - - [04/Aug/2021:19:33:39 +0000] "GET / HTTP/1.1" 200 24523 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:90.0) Gecko/20100101 Firefox/90.0"
