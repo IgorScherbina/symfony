@@ -1,0 +1,5 @@
+2021/08/08 10:04:21 [emerg] 1#1: "server" directive is not allowed here in /etc/nginx/nginx.conf:1
+2021/08/08 10:27:26 [emerg] 1#1: "server" directive is not allowed here in /etc/nginx/nginx.conf:1
+2021/08/08 11:09:48 [emerg] 1#1: "server" directive is not allowed here in /etc/nginx/nginx.conf:1
+2021/08/08 11:18:31 [emerg] 1#1: "server" directive is not allowed here in /etc/nginx/nginx.conf:1
+2021/08/08 11:38:28 [error] 33#33: *1 FastCGI sent in stderr: "PHP message: [error] Uncaught PHP Exception Symfony\Component\HttpKernel\Exception\NotFoundHttpException: "No route found for "GET http://127.0.0.1/"" at /var/www/vendor/symfony/http-kernel/EventListener/RouterListener.php line 136" while reading response header from upstream, client: 172.26.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.26.0.2:9000", host: "127.0.0.1"
