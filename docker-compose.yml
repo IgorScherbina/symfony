@@ -4,6 +4,9 @@ services:
 
   shop-php:
     container_name: shop-php
+    user: "${UID}:${GID}"
+    environment:
+      - APP_ENV=${APP_ENV}
     build:
       context: ./docker/dev/php-fpm
     volumes:
