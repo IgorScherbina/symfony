@@ -23,4 +23,5 @@ RUN git config --global user.email "solerymg@gmail.com" && \
 RUN useradd -rm -d /home/www -s /bin/bash -g root -G sudo -u 1000 www
 USER www
 
+
 EXPOSE 9000
