@@ -11,6 +11,10 @@
 <div class="example-wrapper">
     <h1>Hello {{ controller_name }}! ✅</h1>
 
+    {{ include('_menu.html.twig') }}
+
+{#    <img src="{{ asset('img/images.jpeg') }}">#}
+
     This friendly message is coming from:
     <ul>
         <li>Your controller at <code><a href="{{ '/var/www/src/Controller/HelloController.php'|file_link(0) }}">src/Controller/HelloController.php</a></code></li>

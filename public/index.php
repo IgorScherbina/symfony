@@ -1,6 +1,17 @@
 <?php
 
 use App\Kernel;
+
+
+
+//require_once ('test.php');
+
+//define('ROOT', realpath(__DIR__));
+//echo __namespace__;
+
+//$instance = new MyClass("John Dou","mail", 1);
+//var_dump($instance);
+
 //
 //class MyClass
 //{

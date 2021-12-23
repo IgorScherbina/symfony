@@ -7,11 +7,13 @@ services:
     user: "${UID}:${GID}"
     environment:
       - APP_ENV=${APP_ENV}
+      - DATABASE_TIMEZONE=Europe/Kiev
     build:
       context: ./docker/dev/php-fpm
     volumes:
       - ./:/var/www
       - ./docker/dev/php-fpm/php.ini:/usr/local/etc/php/php.ini
+#      - ./docker/exchange/test.txt:/var/www/exchange/test.txt
 
   shop-nginx:
     container_name: shop-nginx
@@ -30,11 +32,27 @@ services:
       - "80:80"
       - "443:443"
 
-  shop-node:
-    container_name: shop-node
-    image: node:latest
-    volumes:
-      - ./:/var/www
-    working_dir: /var/www
+  mssql:
+    container_name: mssql
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=1Ghbdtn!
     ports:
-      - "8080:8080"
+      - "1433:1433"
+    volumes:
+      - ms_sqlsrv_data:/var/opt/mssql
+
+volumes:
+  ms_sqlsrv_data:
+    driver: local
+
+
+#  shop-node:
+#    container_name: shop-node
+#    image: node:latest
+#    volumes:
+#      - ./:/var/www
+#    working_dir: /var/www
+#    ports:
+#      - "8080:8080"

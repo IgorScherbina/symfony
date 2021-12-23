@@ -1,0 +1,14 @@
+easy_admin:
+  entities:
+    # List the entity class name you want to manage
+    Product:
+      # ...
+      list:
+        fields:
+          - { property: 'image_name', type: 'image', base_path: '%app.path.product_images%' }
+      form:
+        fields:
+          - { property: 'imageFile', type: 'file'}
+      show:
+        fields:
+          - { property: 'image_name', type: 'image', base_path: '%app.path.product_images%' }
